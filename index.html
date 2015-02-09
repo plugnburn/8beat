@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta charset=utf-8>
+		<title>8Beat: Classic bytebeat as it is</title>
+		<meta name=description content="Classic bytebeat player/renderer, 8 bit 8 KHz unsigned PCM">
+		<meta name=keywords content="bytebeat, audio, generative, music, player">
+		<meta name=author content="Revoltech">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel=stylesheet href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel=icon href="favicon.ico" type="image/vnd.microsoft.icon">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row clearfix valign">
+				<div class="jumbotron">
+					<h1>8Beat</h1>
+					<p>Classic bytebeat expression player. Generates and plays 8-bit, 8 KHz unsigned PCM, saves your tunes to the current URL hash. Math functions (sin, log etc) allowed.</p>
+						<div class="form-group">
+							<label for="expr" class="sr-only">Bytebeat expression:</label>
+							<textarea class=form-control id=expr placeholder="Your bytebeat expr(t)" required rows=5></textarea>
+						</div>
+						<div class="form-group">
+							<label for="duration" class="sr-only">Track duration in seconds:</label>
+							<input type=number class=form-control id=duration placeholder="Track duration, seconds" min=1 step=1 required>
+						</div>
+						<button type="button" class="btn btn-primary btn-lg center-block" id=playpause>Play</button>
+				</div>
+			</div>
+		</div>
+		<script src="bytebeat.js"></script>
+	</body>
+</html>
